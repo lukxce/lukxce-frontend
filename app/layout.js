@@ -4,7 +4,6 @@ import SmoothScroll from "./components/SmoothScroll";
 import layoutStyles from "./layout.module.css";
 import "./globals.css";
 
-
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
