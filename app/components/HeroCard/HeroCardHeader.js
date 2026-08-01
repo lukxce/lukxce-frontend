@@ -33,8 +33,6 @@ function IconLinkedin() {
 }
 
 const defaultSocial = [
-  { href: "#", label: "Dribbble", Icon: IconDribbble },
-  { href: "#", label: "GitHub", Icon: IconGithub },
   { href: "#", label: "LinkedIn", Icon: IconLinkedin },
 ];
 

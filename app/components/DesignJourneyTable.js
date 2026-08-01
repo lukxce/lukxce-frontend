@@ -16,24 +16,24 @@ import CtaButton from "./CtaButton";
 
 const ROWS = [
   {
-    title: "Senior Product Designer",
-    middle: "Innovate Digital",
-    right: "Nov ’20 - Current",
+    title: "Head of Marketing",
+    middle: "Hypefy",
+    right: "2024 – Current",
   },
   {
-    title: "UI/UX Designer",
-    middle: "Creative Studios",
-    right: "May ’17 - Dec ’19",
+    title: "Head of Marketing (Employee #6)",
+    middle: "Native Teams",
+    right: "2020 – 2024 · scaled to €40M ARR",
   },
   {
-    title: "Junior Web Designer",
-    middle: "Pixel Perfect Agency",
-    right: "Jul ’14 - Apr ’17",
+    title: "Advisor to the Minister",
+    middle: "Digital EU Agenda",
+    right: "2020",
   },
   {
-    title: "Design Intern",
-    middle: "Bright Ideas Co.",
-    right: "Sep ’13 - Jun ’14",
+    title: "Marketing",
+    middle: "Startit",
+    right: "2018 – 2020",
   },
 ];
 
@@ -72,7 +72,7 @@ function ScrollCountCard() {
   return (
     <div className={styles.statsGroup}>
       <div className={styles.ctaButton}>
-        <CtaButton title="Get in touch" action={() => {}} />
+        <CtaButton title="Get in touch" action="/#contact" />
       </div>
       <div ref={ref} className={styles.statsCard}>
         <div className={styles.statsLeft}>
@@ -83,7 +83,7 @@ function ScrollCountCard() {
         </div>
         <div className={styles.statsRight}>
           <p className={styles.statsText1}>Years of experience</p>
-          <p className={styles.statsText2}>in design and development</p>
+          <p className={styles.statsText2}>in marketing and growth</p>
         </div>
       </div>
       <TwinSatisfactionRow />

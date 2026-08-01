@@ -59,13 +59,11 @@ export default function ContactForm({ onSubmit }) {
       <div className={styles.inner}>
         <header className={styles.header}>
           <h2 id="contact-form-title" className={styles.title}>
-            Ready to
-            <br />
-            get started?
+            Say hello.
           </h2>
           <p className={styles.subtitle}>
             {
-              "Fill out the form, or reach out directly. I'll respond within 24 hours."
+              "I like trading notes with founders and other marketers. If that's you, get in touch."
             }
           </p>
         </header>
@@ -104,24 +102,14 @@ export default function ContactForm({ onSubmit }) {
         {success ? <p className={styles.statusSuccess}>Message sent.</p> : null}
 
         <footer className={styles.footer}>
-          <p className={styles.chatLabel}>{"Let's chat!"}</p>
-          <p className={styles.phone}>
-            <a className={styles.phoneLink} href="tel:+15108956500">
-              (510) 895-6500
-            </a>
-          </p>
+          <p className={styles.chatLabel}>{"Prefer email?"}</p>
           <p className={styles.email}>
-            <a className={styles.emailLink} href="mailto:hello@praxis.com">
-              hello@praxis.com
+            <a className={styles.emailLink} href="mailto:luka@lukxce.com">
+              luka@lukxce.com
             </a>
           </p>
           <p className={styles.copyright}>© Copyright 2026. All rights Reserved.</p>
         </footer>
-      </div>
-      <div className={styles.createdBy}>
-        <p className={styles.disclaimer}>Created by</p>
-        <Image src={logo} alt="Logo" width={100} height={100} className={styles.logo} />
-        <p className={styles.disclaimerBold}>Anatolii Dmitrienko</p>
       </div>
     </section>
   );

@@ -12,10 +12,11 @@ const manrope = Manrope({
 
 export const metadata = {
   title: {
-    default: "Digitl",
-    template: "%s · Digitl",
+    default: "Luka Jovanović — Marketing Operator",
+    template: "%s · Luka Jovanović",
   },
-  description: "Digitl frontend",
+  description:
+    "Insights from inside growing startups: paid acquisition, growth, and building the marketing function from zero. Currently Head of Marketing at Hypefy.",
 };
 
 export default function RootLayout({ children }) {

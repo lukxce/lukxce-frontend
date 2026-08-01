@@ -32,8 +32,6 @@ function IconLinkedin() {
 }
 
 const defaultSocialLinks = [
-  { href: "#", label: "Dribbble", Icon: IconDribbble },
-  { href: "#", label: "GitHub", Icon: IconGithub },
   { href: "#", label: "LinkedIn", Icon: IconLinkedin },
 ];
 
@@ -48,9 +46,9 @@ const defaultSocialLinks = [
  * }} props
  */
 export default function AvatarInfo({
-  name = "Digitl",
-  role = "Full-service marketing for businesses",
-  imageSrc = "https://picsum.photos/seed/digitl-hero-avatar/160/160?grayscale",
+  name = "Luka Jovanović",
+  role = "Marketing operator · Early-stage growth",
+  imageSrc = "https://api.lukxce.com/uploads/avatar.webp",
   imageAlt = "Profile photo",
   socialLinks = defaultSocialLinks,
   className = "",
