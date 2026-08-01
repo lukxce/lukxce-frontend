@@ -69,10 +69,20 @@ export default function HomePage({ articles = [], showcases = [] }) {
   return (
     <div className={styles.page}>
       <main className={styles.main} data-article-count={articles.length}>
-        <HeroCard
-          primaryCtaHref="/contact"
-          headlineLines={["Where marketing meets real business results."]}
-        />
+        <HeroCard />
+
+        <section id="about">
+          <MotionTitleBlock
+            title="About"
+            subtitle="I'm Luka, a marketing operator who's spent his career inside fast-growing startups. I learned how early-stage growth actually works by doing it, not reading about it. I was employee #6 at Native Teams, where I helped scale the company to €40M ARR as Head of Marketing. Along the way I worked at Startit and advised on Serbia's Digital EU Agenda, and today I lead marketing at Hypefy."
+            className={styles.titleContainer}
+            width={550}
+            subtitleWidth={550}
+            subtitleWidthMobile={350}
+          />
+        </section>
+
+        {/* --- Commented-out sections (clients, showcases, services, tools) ---
         <ScrollReveal>
           <ClientsLogosCarousel title="Trusted by:" />
         </ScrollReveal>
@@ -133,13 +143,14 @@ export default function HomePage({ articles = [], showcases = [] }) {
         <ScrollReveal>
           <ToolsList />
         </ScrollReveal>
+        --- End commented-out sections --- */}
 
         <ScrollReveal>
           <Years />
           <div className={styles.journeyContainer}>
-            <h2 className={styles.journeyTitleTitle}>My journey through design</h2>
+            <h2 className={styles.journeyTitleTitle}>My journey through marketing</h2>
             <p className={styles.journeyTitleSubtitle}>
-              Explore the milestones and experiences that have shaped my career,
+              The roles and companies that shaped how I think about growth,
               year by year.
             </p>
           </div>
@@ -149,6 +160,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           <DesignJourneyTable />
         </ScrollReveal>
 
+        {/* --- Commented-out sections (testimonials, pricing, FAQ, CTA) ---
         <MotionTitleBlock
           title="Trusted by our clients"
           subtitle="<b>What clients say</b> <br> about working with us."
@@ -179,11 +191,12 @@ export default function HomePage({ articles = [], showcases = [] }) {
         </div>
 
         <CtaWithImageBackground />
+        --- End commented-out sections --- */}
 
         <MotionTitleBlock
           width={500}
-          title="The Digitl Journal"
-          subtitle="Practical thoughts on marketing, growth, and building brands that stand out."
+          title="Notes"
+          subtitle="On paid, growth, and building marketing from zero."
           subtitleWidth={310}
           subtitleWidthMobile={300}
           className={styles.titleContainer}
@@ -199,17 +212,17 @@ export default function HomePage({ articles = [], showcases = [] }) {
         />
 
         <MotionTitleBlock
-          title="Join 150+ professionals elevating their brand"
-          subtitle="Discover design insights, project updates, and tips to elevate your work straight to your inbox."
+          title="Notes in your inbox"
+          subtitle="What I'm learning building and scaling marketing, a few times a month. Unsubscribe anytime."
           width={600}
           subtitleWidth={425}
           subtitleWidthMobile={350}
           className={styles.titleContainer}
         />
 
-        <ScrollReveal>
+        {/* <ScrollReveal>
           <ClientsLogosCarousel marginTop={60} marginBottom={60} />
-        </ScrollReveal>
+        </ScrollReveal> */}
 
         <ScrollReveal>
           <Subscribe />

@@ -10,9 +10,9 @@ import {
 } from "../../lib/scrollReveal";
 import styles from "./Years.module.css";
 
-const CURRENT_YEAR = 2026;
-const YEARS = [CURRENT_YEAR, 2025, 2024, 2023, 2022];
-const YEAR_OPACITIES = [1, 0.5, 0.4, 0.3, 0.2];
+const CURRENT_YEAR = 2024;
+const YEARS = [CURRENT_YEAR, 2022, 2020, 2018];
+const YEAR_OPACITIES = [1, 0.5, 0.35, 0.2];
 
 function getYearVariants(targetOpacity) {
   return {

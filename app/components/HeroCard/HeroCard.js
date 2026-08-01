@@ -33,31 +33,31 @@ function ViewAllArrowIcon({ className }) {
 }
 
 const DEFAULT_AVATAR =
-  "https://api.digitl.me/uploads/icon_1ea74e1afa.png";
+  "https://api.lukxce.com/uploads/icon_1ea74e1afa.png";
 
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
-  name = "Digitl",
-  subtitle = "Full-service marketing for businesses",
+  name = "Luka Jovanović",
+  subtitle = "Marketing operator · Early-stage growth",
   headlineLines = [
-    "Design that moves",
-    "products forward",
+    "Insights from inside",
+    "growing startups.",
   ],
   description =
-    "We build brands that stand out, convert harder, and scale faster.",
-  socialProofLabel = "Helping 50+ companies grow",
+    "Paid acquisition, growth, and building the marketing function from zero, learned inside early-stage startups.",
+  socialProofLabel = "Currently Head of Marketing at Hypefy",
   progressActiveCount = 2,
   avatarSrc = DEFAULT_AVATAR,
-  avatarAlt = "Profile photo",
-  availabilitySlotsLabel = "2 open slots",
-  availabilityPeriodLabel = "for June",
-  location = "London",
+  avatarAlt = "Luka Jovanović",
+  availabilitySlotsLabel = "",
+  availabilityPeriodLabel = "",
+  location = "Belgrade",
   templateHref = "#",
   templateLabel = "Praxis template →",
-  primaryCtaHref = "/contact",
-  primaryCtaLabel = "Get started",
-  secondaryCtaHref = "/projects",
-  secondaryCtaLabel = "What we do",
+  primaryCtaHref = "/journal",
+  primaryCtaLabel = "Read the notes",
+  secondaryCtaHref = "/#about",
+  secondaryCtaLabel = "About me",
   socialLinks,
   className = "",
 }) {
@@ -143,8 +143,8 @@ export default function HeroCard({
             Based in {location}, working with businesses worldwide.
           </p>
           </div>
-          <Link href="/#faq" className={styles.metaLink}>
-            <span>FAQ</span>
+          <Link href="/#contact" className={styles.metaLink}>
+            <span>Contact</span>
             <ViewAllArrowIcon className={styles.metaArrow} />
           </Link>
         </div>

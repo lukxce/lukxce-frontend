@@ -9,8 +9,8 @@ import styles from "./ClientShowcaseHeader.module.css";
 import stylesNotFound from "./NotFoundShowcaseHeader.module.css";
 import CtaButton from "./CtaButton";
 
-const NAME = "Alex Rivera";
-const ROLE = "Web designer · Developer";
+const NAME = "Luka Jovanović";
+const ROLE = "Marketing operator · Early-stage growth";
 
 function IconDribbble() {
   return (
@@ -43,8 +43,6 @@ function IconLinkedin() {
 }
 
 const SOCIAL_LINKS = [
-  { href: "#", label: "Dribbble", Icon: IconDribbble },
-  { href: "#", label: "GitHub", Icon: IconGithub },
   { href: "#", label: "LinkedIn", Icon: IconLinkedin },
 ];
 

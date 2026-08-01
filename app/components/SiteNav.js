@@ -21,10 +21,10 @@ export default function SiteNav() {
             </Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/journal">Notes</Link>
           </li>
           <li>
-            <Link href="/journal">Journal</Link>
+            <Link href="/#about">About</Link>
           </li>
           <li className={styles.contactLink}>
             <Link href="/#contact">Contact</Link>
