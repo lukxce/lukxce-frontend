@@ -18,22 +18,27 @@ const ROWS = [
   {
     title: "Head of Marketing",
     middle: "Hypefy",
-    right: "2024 – Current",
+    right: "2025 – Current",
   },
   {
     title: "Head of Marketing (Employee #6)",
     middle: "Native Teams",
-    right: "2020 – 2024 · scaled to €40M ARR",
+    right: "2021 – 2024 · scaled to €40M ARR",
   },
   {
-    title: "Advisor to the Minister",
-    middle: "Digital EU Agenda",
+    title: "Advisor",
+    middle: "Ministry of Telecommunications",
     right: "2020",
   },
   {
-    title: "Marketing",
+    title: "Product Marketing Manager",
     middle: "Startit",
     right: "2018 – 2020",
+  },
+  {
+    title: "Master's, International Business",
+    middle: "Middlesex University London",
+    right: "",
   },
 ];
 
@@ -74,19 +79,6 @@ function ScrollCountCard() {
       <div className={styles.ctaButton}>
         <CtaButton title="Get in touch" action="/#contact" />
       </div>
-      <div ref={ref} className={styles.statsCard}>
-        <div className={styles.statsLeft}>
-          <span className={styles.statsNumber} aria-live="polite">
-            {count}
-            <sup className={styles.statsPlus}>+</sup>
-          </span>
-        </div>
-        <div className={styles.statsRight}>
-          <p className={styles.statsText1}>Years of experience</p>
-          <p className={styles.statsText2}>in marketing and growth</p>
-        </div>
-      </div>
-      <TwinSatisfactionRow />
     </div>
   );
 }

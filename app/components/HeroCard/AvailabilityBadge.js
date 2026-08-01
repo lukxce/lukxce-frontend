@@ -4,6 +4,7 @@ export default function AvailabilityBadge({
   slotsLabel = "2 open slots",
   periodLabel = "for December",
 }) {
+  if (!slotsLabel && !periodLabel) return null;
   return (
     <div className={styles.root}>
       <div className={styles.row}>

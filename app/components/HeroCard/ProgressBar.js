@@ -3,6 +3,7 @@ import styles from "./ProgressBar.module.css";
 const TOTAL = 3;
 
 export default function ProgressBar({ activeCount = 2 }) {
+  if (activeCount <= 0) return null;
   const safe = Math.min(Math.max(activeCount, 0), TOTAL);
   return (
     <div className={styles.track} role="presentation">
