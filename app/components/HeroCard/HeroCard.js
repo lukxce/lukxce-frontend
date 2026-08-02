@@ -38,13 +38,14 @@ const DEFAULT_AVATAR =
 /** Full-viewport portfolio hero with floating `stripe.svg` tab and soft card. */
 export default function HeroCard({
   name = "Luka Jovanović",
-  subtitle = "Marketing operator · Early-stage growth",
+  subtitle = "Startup marketing & growth",
   headlineLines = [
-    "Marketing from",
-    "the inside out.",
+    "I build marketing",
+    "inside growing",
+    "startups.",
   ],
   description =
-    "Paid acquisition, growth, and building the marketing function from zero, learned inside early-stage startups.",
+    "Paid acquisition, growth, and building the whole marketing function from zero.",
   socialProofLabel = "Currently Head of Marketing at Hypefy",
   progressActiveCount = 0,
   avatarSrc = DEFAULT_AVATAR,
@@ -54,10 +55,10 @@ export default function HeroCard({
   location = "Belgrade",
   templateHref = "#",
   templateLabel = "Praxis template →",
-  primaryCtaHref = "/#about",
-  primaryCtaLabel = "About me",
-  secondaryCtaHref = "/journal",
-  secondaryCtaLabel = "Notes",
+  primaryCtaHref = "/journal",
+  primaryCtaLabel = "Journal",
+  secondaryCtaHref = "/#about",
+  secondaryCtaLabel = "About me",
   socialLinks,
   className = "",
 }) {
@@ -121,9 +122,6 @@ export default function HeroCard({
         </h1>
 
         <div className={styles.socialProof}>
-          <span className={styles.stars} aria-hidden>
-            ★★★★★
-          </span>
           <span className={styles.socialProofText}>{socialProofLabel}</span>
         </div>
 
@@ -140,7 +138,7 @@ export default function HeroCard({
           <div className={styles.metaRowLocation}>
           <Image src={locationIcon} alt="Location" width={11} height={11} className={styles.metaRowLocationIcon} />
           <p className={styles.metaText}>
-            Based in {location}, working with businesses worldwide.
+            Based in {location}.
           </p>
           </div>
           <Link href="/#contact" className={styles.metaLink}>

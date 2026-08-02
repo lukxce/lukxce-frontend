@@ -73,8 +73,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
         <section id="about">
           <MotionTitleBlock
-            title=""
-            subtitle="I'm Luka, a marketing operator who's spent his career inside fast-growing startups. I learned how early-stage growth actually works by doing it, not reading about it. I was employee #6 at Native Teams, where I helped scale the company to €40M ARR as Head of Marketing. Along the way I worked at Startit and advised on Serbia's Digital EU Agenda, and today I lead marketing at Hypefy."
+            title="Startups, from every angle."
+            subtitle="I've spent my career around startups, from just about every angle. At Startit I worked with founders building their first companies. At Native Teams I was employee #6 and helped scale it to €40M ARR as Head of Marketing. I've consulted for early-stage teams like Hive5, advised on Serbia's Digital EU Agenda, and today I lead marketing at Hypefy. Different seats, same question: how early-stage companies actually find growth."
             className={styles.titleContainer}
             width={550}
             subtitleWidth={550}
@@ -82,6 +82,7 @@ export default function HomePage({ articles = [], showcases = [] }) {
           />
         </section>
 
+        {/* --- Commented-out sections (clients, showcases, services, tools) ---
         <MotionTitleBlock
           title="Case studies"
           subtitle="Projects and results from inside the companies I've worked at."
@@ -104,8 +105,6 @@ export default function HomePage({ articles = [], showcases = [] }) {
             />
           ))}
         </div>
-
-        {/* --- Commented-out sections (clients, services, tools) ---
         <ScrollReveal>
           <ClientsLogosCarousel title="Trusted by:" />
         </ScrollReveal>
@@ -195,8 +194,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
         <MotionTitleBlock
           width={500}
-          title="Writing"
-          subtitle="Thoughts on paid acquisition, growth, and building marketing functions."
+          title="Building marketing from zero"
+          subtitle="Paid, growth, and the real work of building a marketing team."
           subtitleWidth={400}
           subtitleWidthMobile={300}
           className={styles.titleContainer}
@@ -212,8 +211,8 @@ export default function HomePage({ articles = [], showcases = [] }) {
         />
 
         <MotionTitleBlock
-          title="Stay in the loop"
-          subtitle="Marketing lessons from inside early-stage startups, a few times a month."
+          title="Marketing insights from inside"
+          subtitle="Marketing lessons from inside early-stage startups, a few times a month. Unsubscribe anytime."
           width={600}
           subtitleWidth={425}
           subtitleWidthMobile={350}

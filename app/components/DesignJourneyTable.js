@@ -38,7 +38,7 @@ const ROWS = [
   {
     title: "Master's, International Business",
     middle: "Middlesex University London",
-    right: "",
+    right: "2021",
   },
 ];
 

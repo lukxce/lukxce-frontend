@@ -94,7 +94,7 @@ export default function ContactForm({ onSubmit }) {
             className={styles.submit}
             disabled={isSubmitting}
           >
-            Send message
+            Get in touch
           </button>
         </form>
 

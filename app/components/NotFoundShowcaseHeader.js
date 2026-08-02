@@ -10,7 +10,7 @@ import stylesNotFound from "./NotFoundShowcaseHeader.module.css";
 import CtaButton from "./CtaButton";
 
 const NAME = "Luka Jovanović";
-const ROLE = "Marketing operator · Early-stage growth";
+const ROLE = "Startup marketing & growth";
 
 function IconDribbble() {
   return (

@@ -17,7 +17,7 @@ export const metadata = {
     template: "%s · Luka Jovanović",
   },
   description:
-    "Insights from inside growing startups: paid acquisition, growth, and building the marketing function from zero. Currently Head of Marketing at Hypefy.",
+    "I build marketing inside growing startups, from paid acquisition to growth to the whole function. Currently Head of Marketing at Hypefy.",
 };
 
 export default function RootLayout({ children }) {

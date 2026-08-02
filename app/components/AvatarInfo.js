@@ -47,7 +47,7 @@ const defaultSocialLinks = [
  */
 export default function AvatarInfo({
   name = "Luka Jovanović",
-  role = "Marketing operator · Early-stage growth",
+  role = "Startup marketing & growth",
   imageSrc = "https://api.lukxce.com/uploads/avatar.webp",
   imageAlt = "Profile photo",
   socialLinks = defaultSocialLinks,
