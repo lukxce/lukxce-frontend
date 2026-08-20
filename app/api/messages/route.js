@@ -1,4 +1,4 @@
-import { createMessage } from "../../../lib/messages.js";
+import { createMessage } from "../../../lib/cms.js";
 
 function normalizeEmail(value) {
   if (typeof value !== "string") return null;

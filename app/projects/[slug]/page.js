@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import {
   tryFindClientShowcase,
   tryGetClientShowcases,
-} from "../../../lib/clientShowcases.js";
+} from "../../../lib/cms.js";
 import { buildShowcaseOutline } from "../../../lib/pageOutline.js";
 import ClientShowcaseHeader from "../../components/ClientShowcaseHeader";
 import ClientsLogosCarousel from "../../components/ClientsLogosCarousel";
@@ -15,7 +15,7 @@ import LinkCard from "../../components/LinkCard";
 import MotionTitleBlock from "../../components/MotionTitleBlock";
 import ShowcaseKeyTakeaways from "../../components/ShowcaseKeyTakeaways";
 import ShowcaseSuccessRate from "../../components/ShowcaseSuccessRate";
-import ProjectBlocksRenderer from "../../components/ProjectBlocksRenderer";
+import ProjectBlocksRendererAuto from "../../components/ProjectBlocksRendererAuto";
 import Subscribe from "../../components/Subscribe";
 import innerStyles from "../../innerPage.module.css";
 import articleStyles from "../../journal/[slug]/article.module.css";
@@ -133,7 +133,7 @@ export default async function ClientShowcasePage(props) {
               : <DetailPageOutlineMobileNav />}
           </div>
           {hasContent
-            ? <ProjectBlocksRenderer blocks={showcase.content} />
+            ? <ProjectBlocksRendererAuto blocks={showcase.content} />
             : <p className={articleStyles.empty}>No project details for this entry.</p>}
         </ProjectArticleContent>
       {/* </DetailPageOutline> */}

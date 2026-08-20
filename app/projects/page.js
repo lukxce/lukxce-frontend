@@ -5,7 +5,7 @@ import LinkCard from "../components/LinkCard";
 import ClientsLogosCarousel from "../components/ClientsLogosCarousel";
 import Subscribe from "../components/Subscribe";
 import ContactForm from "../components/ContactForm";
-import { tryGetClientShowcases } from "../../lib/clientShowcases.js";
+import { tryGetClientShowcases } from "../../lib/cms.js";
 import AvatarInfo from "../components/AvatarInfo";
 
 export const metadata = {

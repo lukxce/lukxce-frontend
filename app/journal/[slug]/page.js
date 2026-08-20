@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { tryFindArticle, tryGetArticlesForHome } from "../../../lib/articles.js";
+import { tryFindArticle, tryGetArticlesForHome } from "../../../lib/cms.js";
 import { buildJournalOutline } from "../../../lib/pageOutline.js";
 import ClientsLogosCarousel from "../../components/ClientsLogosCarousel";
 import ContactForm from "../../components/ContactForm";
@@ -8,7 +8,7 @@ import JournalArticleContent from "../../components/JournalArticleContent";
 import JournalList from "../../components/JournalList";
 import MotionTitleBlock from "../../components/MotionTitleBlock";
 import ShowcaseKeyTakeaways from "../../components/ShowcaseKeyTakeaways";
-import StrapiBlocksRenderer from "../../components/StrapiBlocksRenderer";
+import BlocksRenderer from "../../components/BlocksRenderer";
 import Subscribe from "../../components/Subscribe";
 import innerStyles from "../../innerPage.module.css";
 import styles from "./article.module.css";
@@ -106,7 +106,7 @@ export default async function JournalArticlePage(props) {
           }
         >
           {hasBlocks
-            ? <StrapiBlocksRenderer blocks={article.blocks} />
+            ? <BlocksRenderer blocks={article.blocks} />
             : <p className={styles.empty}>No body content for this entry.</p>}
         </JournalArticleContent>
       {/* </DetailPageOutline> */}

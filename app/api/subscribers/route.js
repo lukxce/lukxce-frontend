@@ -1,4 +1,4 @@
-import { createSubscriber } from "../../../lib/subscribers.js";
+import { createSubscriber } from "../../../lib/cms.js";
 
 function normalizeEmail(value) {
   if (typeof value !== "string") return null;

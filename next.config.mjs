@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: "api.lukxce.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/images/**",
+      },
     ],
   },
 };

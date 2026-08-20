@@ -2,7 +2,7 @@ import MotionTitleBlock from "../components/MotionTitleBlock";
 import ScrollReveal from "../components/ScrollReveal";
 import styles from "../innerPage.module.css";
 import JournalList from "../components/JournalList";
-import { tryGetArticlesForHome } from "../../lib/articles";
+import { tryGetArticlesForHome } from "../../lib/cms.js";
 import ClientsLogosCarousel from "../components/ClientsLogosCarousel";
 import Subscribe from "../components/Subscribe";
 import ContactForm from "../components/ContactForm";
