@@ -8,6 +8,8 @@ import ContactForm from "../components/ContactForm";
 import { tryGetClientShowcases } from "../../lib/cms.js";
 import AvatarInfo from "../components/AvatarInfo";
 
+export const revalidate = 60;
+
 export const metadata = {
   title: "Projects",
   description: "Selected work and experiments.",

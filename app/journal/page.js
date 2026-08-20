@@ -8,6 +8,8 @@ import Subscribe from "../components/Subscribe";
 import ContactForm from "../components/ContactForm";
 import AvatarInfo from "../components/AvatarInfo";
 
+export const revalidate = 60;
+
 export const metadata = {
   title: "Journal",
   description: "Notes, updates, and longer-form writing.",
