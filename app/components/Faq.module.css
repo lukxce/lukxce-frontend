@@ -33,7 +33,8 @@
 
 .item {
   width: 100%;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   border: 1px solid #e9e9e9;
   border-radius: 50px;
   background: #ffffff;
@@ -68,7 +69,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
   color: #171717;
   font-family: var(--font-manrope);
 }
@@ -107,7 +108,7 @@
   line-height: 130%;
   color: #171717;
   opacity: 0.5;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .followUpText {
