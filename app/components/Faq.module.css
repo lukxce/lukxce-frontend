@@ -106,8 +106,7 @@
   font-size: 17px;
   font-weight: 600;
   line-height: 130%;
-  color: #171717;
-  opacity: 0.5;
+  color: rgba(23, 23, 23, 0.75);
   letter-spacing: -0.04em;
 }
 
@@ -121,7 +120,7 @@
   line-height: 130%;
   letter-spacing: -0.05em;
   text-align: center;
-  color: #17171780;
+  color: rgba(23, 23, 23, 0.65);
 }
 
 .askLink {
