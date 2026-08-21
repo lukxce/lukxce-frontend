@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import clientsAvatar from "../assets/clients.png";
 import storyBackground from "../assets/girl-laptop.png";
-import handPhone from "../assets/hand-phone.png";
 import phoneFrame from "../assets/phone.png";
 import starsSvg from "../assets/stars.svg";
 import {
@@ -118,14 +117,6 @@ export default function PhoneInHand() {
           whileInView="visible"
           viewport={scrollRevealViewport}
         >
-          <Image
-            src={handPhone}
-            alt=""
-            width={420}
-            height={560}
-            className={styles.handImage}
-            priority={false}
-          />
           <Image
             src={phoneFrame}
             alt=""
