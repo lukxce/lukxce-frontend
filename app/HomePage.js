@@ -2,19 +2,17 @@
 
 import ContactForm from "./components/ContactForm";
 import DesignJourneyTable from "./components/DesignJourneyTable";
-import JournalList from "./components/JournalList";
 import MotionTitleBlock from "./components/MotionTitleBlock";
 import ScrollReveal from "./components/ScrollReveal";
-import Subscribe from "./components/Subscribe";
 import Years from "./components/Years";
 import styles from "./page.module.css";
 import HeroCard from "./components/HeroCard";
 import AvatarInfo from "./components/AvatarInfo";
 
-export default function HomePage({ articles = [], showcases = [] }) {
+export default function HomePage() {
   return (
     <div className={styles.page}>
-      <main className={styles.main} data-article-count={articles.length}>
+      <main className={styles.main}>
         <HeroCard />
 
         <section id="about" className={styles.aboutSection}>
@@ -50,41 +48,6 @@ export default function HomePage({ articles = [], showcases = [] }) {
 
           <ScrollReveal>
             <DesignJourneyTable />
-          </ScrollReveal>
-        </section>
-
-        <section className={styles.articlesSection}>
-          <MotionTitleBlock
-            width={500}
-            title="Building marketing from zero"
-            subtitle="Paid, growth, and the real work of building a marketing team."
-            subtitleWidth={400}
-            subtitleWidthMobile={300}
-            className={styles.titleContainer}
-          />
-
-          <JournalList
-            items={articles.map((a) => ({
-              slug: a.slug,
-              title: a.title,
-              publishedAt: a.publishedAt,
-              imageUrl: a.coverUrl,
-            }))}
-          />
-        </section>
-
-        <section className={styles.subscribeSection}>
-          <MotionTitleBlock
-            title="Marketing insights from inside"
-            subtitle="Marketing lessons from inside early-stage startups, a few times a month. Unsubscribe anytime."
-            width={600}
-            subtitleWidth={425}
-            subtitleWidthMobile={350}
-            className={styles.titleContainer}
-          />
-
-          <ScrollReveal>
-            <Subscribe />
           </ScrollReveal>
         </section>
 
