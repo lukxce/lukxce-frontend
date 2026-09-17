@@ -25,8 +25,8 @@ const WORK_CARDS = [
     bigFact: "4 promotions",
     body: "Joined as a marketing manager in year one, left as Head of Marketing Strategy. Built demand generation end to end while the company grew from a regional startup into a global work payments platform: paid, SEO, funnels, lifecycle, new market launches, and eventually the strategy function itself. Startups don't hand you a playbook. You write it, break it, and rewrite it.",
     linkLabel: "The full story →",
-    linkHref: "https://linkedin.com/in/lukajovanovic",
-    external: true,
+    linkHref: "/projects/native-teams",
+    external: false,
   },
   {
     meta: "Hypefy · 2026 to now",
