@@ -2,6 +2,7 @@
 
 import ContactForm from "./components/ContactForm";
 import DesignJourneyTable from "./components/DesignJourneyTable";
+import LinkCard from "./components/LinkCard";
 import MotionTitleBlock from "./components/MotionTitleBlock";
 import ScrollReveal from "./components/ScrollReveal";
 import Years from "./components/Years";
@@ -9,11 +10,37 @@ import styles from "./page.module.css";
 import HeroCard from "./components/HeroCard";
 import AvatarInfo from "./components/AvatarInfo";
 
-export default function HomePage() {
+export default function HomePage({ showcases = [] }) {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <HeroCard />
+
+        {showcases.length > 0 && (
+          <>
+            <MotionTitleBlock
+              title="Case studies"
+              subtitle="Projects and results from inside the companies I've worked at."
+              subtitleWidthMobile={200}
+              className={styles.titleContainer}
+              marginTop={10}
+            />
+            <div className={styles.cardColumn}>
+              {showcases.map((card) => (
+                <LinkCard
+                  key={card.id ?? card.title}
+                  href={card.href}
+                  backgroundSrc={card.backgroundSrc}
+                  backgroundAlt={card.backgroundAlt}
+                  thumbSrc={card.thumbSrc}
+                  thumbAlt={card.thumbAlt}
+                  title={card.title}
+                  subtitle={card.subtitle}
+                />
+              ))}
+            </div>
+          </>
+        )}
 
         <section id="about" className={styles.aboutSection}>
           <MotionTitleBlock
