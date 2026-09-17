@@ -2,6 +2,7 @@
 
 import ContactForm from "./components/ContactForm";
 import DesignJourneyTable from "./components/DesignJourneyTable";
+import JournalList from "./components/JournalList";
 import LinkCard from "./components/LinkCard";
 import MotionTitleBlock from "./components/MotionTitleBlock";
 import ScrollReveal from "./components/ScrollReveal";
@@ -10,7 +11,7 @@ import styles from "./page.module.css";
 import HeroCard from "./components/HeroCard";
 import AvatarInfo from "./components/AvatarInfo";
 
-export default function HomePage({ showcases = [] }) {
+export default function HomePage({ articles = [], showcases = [] }) {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -77,6 +78,24 @@ export default function HomePage({ showcases = [] }) {
             <DesignJourneyTable />
           </ScrollReveal>
         </section>
+
+        <MotionTitleBlock
+          width={500}
+          title="Building marketing from zero"
+          subtitle="Paid, growth, and the real work of building a marketing team."
+          subtitleWidth={400}
+          subtitleWidthMobile={300}
+          className={styles.titleContainer}
+        />
+
+        <JournalList
+          items={articles.map((a) => ({
+            slug: a.slug,
+            title: a.title,
+            publishedAt: a.publishedAt,
+            imageUrl: a.coverUrl,
+          }))}
+        />
 
         <ScrollReveal>
           <AvatarInfo />
