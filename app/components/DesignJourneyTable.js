@@ -18,26 +18,26 @@ const ROWS = [
   {
     title: "Head of Marketing",
     middle: "Hypefy",
-    right: "2025 – Current",
+    right: "Feb 2026 – now",
   },
   {
-    title: "Head of Marketing (Employee #6)",
+    title: "Head of Marketing Strategy (employee #6)",
     middle: "Native Teams",
-    right: "2021 – 2024 · scaled to €40M ARR",
+    right: "Oct 2021 – Feb 2026 · scaled to €40M ARR",
   },
   {
     title: "Advisor",
-    middle: "Ministry of Telecommunications",
-    right: "2020",
+    middle: "Ministry of Trade, Tourism and Telecommunications",
+    right: "2021",
   },
   {
-    title: "Product Marketing Manager",
+    title: "Product Manager, prev. Growth Hacker",
     middle: "Startit",
-    right: "2018 – 2020",
+    right: "2020 – 2021",
   },
   {
     title: "Master's, International Business",
-    middle: "Middlesex University London",
+    middle: "Middlesex University London & University of Belgrade",
     right: "2021",
   },
 ];

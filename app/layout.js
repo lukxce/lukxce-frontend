@@ -17,7 +17,7 @@ export const metadata = {
     template: "%s · Luka Jovanović",
   },
   description:
-    "I build marketing inside growing startups, from paid acquisition to growth to the whole function. Currently Head of Marketing at Hypefy.",
+    "I build marketing inside startups. Employee #6 to €40M ARR at Native Teams, now Head of Marketing at Hypefy. I publish the numbers most marketers keep in a drawer.",
 };
 
 export default function RootLayout({ children }) {

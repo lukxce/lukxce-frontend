@@ -21,6 +21,9 @@ export default function SiteNav() {
             </Link>
           </li>
           <li>
+            <Link href="/#work">Work</Link>
+          </li>
+          <li>
             <Link href="/journal">Journal</Link>
           </li>
           <li>
