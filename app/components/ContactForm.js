@@ -63,7 +63,7 @@ export default function ContactForm({ onSubmit }) {
           </h2>
           <p className={styles.subtitle}>
             {
-              "I trade notes with founders and marketers. I answer faster if you bring data."
+              "I like trading notes with founders and other marketers. If that's you, get in touch."
             }
           </p>
         </header>
@@ -108,7 +108,7 @@ export default function ContactForm({ onSubmit }) {
               luka@lukxce.com
             </a>
           </p>
-          <p className={styles.copyright}>© 2026 Luka Jovanović. All numbers real, all opinions mine.</p>
+          <p className={styles.copyright}>© Copyright 2026. All rights Reserved.</p>
         </footer>
       </div>
     </section>
